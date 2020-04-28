@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+@font-face {
+    font-family: Bebas;
+    src: url('../fonts/BebasKai-Regular.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* Background Picture */
+  
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+}
+
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+}
+  
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.city {
+    background: url('/images/London-Skyline.jpg') no-repeat center; 
+    background-size: cover;
+    transform: translateZ(-600px) scale(3);
+    z-index: 1;
+}
+
+
+
+/* Nav Stuff */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    border: 1.5px solid #fff;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.btn:hover {
+    color: #000;
+    background: #fff;
+}
+
+.gradient {
+  background: linear-gradient(
+    rgba(105, 211, 252, 0.25) 0%,
+    rgba(255, 116, 161, 0.25) 86%,
+    rgba(1, 0, 0, 0.8) 100%
+  );
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+  z-index: 7;
+}
+
+.logo {
+  font-size: 1.25rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+}
+
+.gradient ul {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+}
+
+.gradient ul li {
+  margin-left: 2.5rem;
+  list-style-type: none;
+  float: left;
+  visibility: hidden;
+}
+
+.gradient ul li:nth-of-type(3) {
+  visibility: visible;
+}
+
+
+@media (min-width: 760px) {
+    .gradient ul li {
+        visibility: visible;
+    }
+}
+
+/* Title */
+
+.title {
+    font-family: Bebas;
+    position: absolute;
+    left: 15rem;
+    top: 8rem;
+    font-weight: 200;
+    font-size: 20rem;
+}
+
+.caption {
+    font-family: Bebas;
+    position: absolute;
+    left: 16rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.info-container h2:nth-of-type(1){
+    top: 30rem;
+}
+
+.info-container h2:nth-of-type(2){
+    top: 34rem;
+}
+
+
+/* Socials */
+
+.social-container {
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2rem;
+  }
+  
+  .social-container i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+/* Second Page */
+
+.page2 {
+    background: black;
+    z-index: 10;
+}
+
+
+.page2 {
+    background: #000;
+    transform: translateZ(0) scale(1);
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .page2 img {
+    width: 75%;
+    margin-bottom: 2.5rem;
+    filter: saturate(0.65);
+  }
+  
+  .page2 h2,
+  .page2 p {
+    margin-bottom: 1rem;
+  }
+  
+  .page2 p:nth-of-type(1) {
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin: 1rem 2.5rem;
+  }
+  
+  .page2 p:nth-of-type(2) {
+    font-size: 0.6rem;
+    margin-bottom: 3rem;
+  }
+
+
+  
+@media (min-width: 760px) {
+    .gradient ul li {
+      visibility: visible;
+    }
+  
+    .page2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 3rem;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .page2 img {
+      justify-self: end;
+      width: 75%;
+    }
+  
+    .text-container p:nth-of-type(1) {
+      font-size: 1rem;
+      width: 75%;
+      margin: 1rem 0;
+    }
+  
+    .text-container p:nth-of-type(1) {
+      font-size: 0.86rem;
+    }
+}
+
+
+  @media (min-width: 1126px) {
+    .sky,
+    .gradient {
+      background-size: contain;
+    }
+  }
+
