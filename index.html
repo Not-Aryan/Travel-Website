@@ -8,50 +8,140 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="parallax__group hero-container">
-            <div class="parallax__layer city"></div>
-            <div class="parallax__layer gradient">
-                <h2 class="logo">AJ Travels Inc.</h2>
-                <ul>
-                  <li><a href="#">Passions</a></li>
-                  <li><a href="#">Goals</a></li>
-                  <li><a href="#" class="btn">Get Started Now</a></li>
-                </ul>
+  <section class="wrapper-main">
+    <div class="parallax_layer navigation">
+      <h2 class="logo">Explore Inc.</h2>
+      <ul>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#" class="btn">Get Started Now</a></li>
+      </ul>
+      <div class="social-container">
+        <a href="https://github.com/KiaanCastillo" target="_blank"
+          ><i class="icon ion-logo-github"></i
+        ></a>
+        <a href="https://www.instagram.com/craftedbykiaan/" target="_blank"
+          ><i class="icon ion-logo-instagram"></i
+        ></a>
+        <a href="https://dribbble.com/kiaancastillo" target="_blank"
+          ><i class="icon ion-logo-dribbble"></i
+        ></a>
+        <a href="https://www.youtube.com/c/KiaanCastillo" target="_blank"
+          ><i class="icon ion-logo-youtube"></i
+        ></a>
+      </div>
 
-                <div class="info-container">
-                    <h1 class="title">LONDON</h1>
-                    <h2 class="caption">Lorem ipsum dolor sit amet</h2>
-                    <h2 class="caption">consectetur adipisicing elit. Earum, debitis!</h2>
-                </div>
+      <a href="#" class="btn buy">Book Now</a>
 
-               
+      <img src="/images/scroll.svg" alt="scroll down" class="scroll">
+    </div>
+    
+    <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+    <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+      
+    <div class="slider-pagination">
+      <label for="slider_1" class="page1"></label>
+      <label for="slider_2" class="p2"></label>
+    </div>
 
-                <div class="social-container">
-                    <a href="https://github.com/KiaanCastillo" target="_blank"
-                      ><i class="icon ion-logo-github"></i
-                    ></a>
-                    <a href="https://www.instagram.com/craftedbykiaan/" target="_blank"
-                      ><i class="icon ion-logo-instagram"></i
-                    ></a>
-                    <a href="https://dribbble.com/kiaancastillo" target="_blank"
-                      ><i class="icon ion-logo-dribbble"></i
-                    ></a>
-                    <a href="https://www.youtube.com/c/KiaanCastillo" target="_blank"
-                      ><i class="icon ion-logo-youtube"></i
-                    ></a>
-                  </div>
-            </div>
-        </div>
-        <div class="parallax__group page2">
-            <img src="/images/concert.jpg" alt="Lively and colourful concert" />
-            <div class="text-container">
-              <h2>This is your year.</h2>
-              <p>What would life be if we had no courage to attempt anything?</p>
-              <p>- Vincent Van Gogh</p>
-              <a href="#" class="btn">Get Started Now</a>
+    <div class="slider">
+      <div class="wrapper-indiv">
+        <div class="parallax__group">
+          <div class="parallax__layer slide-1"></div>
+          <div class="parallax__layer gradient">
+            <div class="info-container">
+              <h1 class="rellax title" data-rellax-speed="4">LONDON</h1>
+              <h2 class="rellax caption">Lorem ipsum dolor sit amet</h2>
+              <h2 class="rellax caption">consectetur adipisicing elit. Earum, debitis!</h2>
             </div>
           </div>
+        </div>
+
+        <div class="parallax__group">
+          <h1 class="attrac">Attractions</h1>
+          <div class="cards">
+            <div class="card">
+              <img src="/images/Big Ben.jpg"/>
+              <h1>Big Ben</h1>
+            </div>
+  
+            <div class="card">
+              <img src="/images/BH.jpg"/>
+              <h1 class="back">Buckingham</h1>
+            </div>
+  
+            <div class="card">
+              <img src="/images/tower bridge (1).jpg"/>
+              <h1 class="back">Tower Bridge</h1>
+            </div>
+  
+            <div class="card">
+              <img src="/images/London Eye.jpg"/>
+              <h1 class="back">London Eye</h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="slider slide-2">
+      <div class="wrapper-indiv">
+        <div class="parallax__group">
+          <div class="parallax_layer ">
+            <div class="info-container">
+              <h1 class="rellax title" data-rellax-speed="4">San Francisco</h1>
+              <h2 class="rellax caption">Lorem ipsum dolor sit amet</h2>
+              <h2 class="rellax caption">consectetur adipisicing elit. Earum, debitis!</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="parallax__group">
+          <h1 class="attrac">Attractions</h1>
+          <div class="cards">
+            <div class="card">
+              <img src="/images/Golden Gate.jpg"/>
+              <h1 class="back">Golden Gate</h1>
+            </div>
+  
+            <div class="card">
+              <img src="/images/Lombard Street.jpg"/>
+              <h1 style="left: 5px !important">Lombard Street</h1>
+            </div>
+  
+            <div class="card">
+              <img src="/images/Cable Cars.jpg"/>
+              <h1 style="left: 40px !important">Cable Cars</h1>
+            </div>
+  
+            <div class="card">
+              <img src="/images/Alcatraz.jpg"/>
+              <h1>Alcatraz</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+
+  </section>
+
+  <!-- javascript -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      speed: 2
+    });
+  </script>
+
 </body>
 </html>
+
+
+
+
+
+
